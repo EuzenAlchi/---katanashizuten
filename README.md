@@ -22,3 +22,28 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 3. Una vez realizadas las pruebas en develop satisfactoriamente se pasa a release, para posteriormente pasar
 a master (main).
+
+## Página web de gestión para un gremio de aventureros.
+
+Teniendo en cuenta que nuestro gremio va a tener:
+1.	Categoría de rangos.
+2.	Registro de aventurero.
+3.	Gestor de aumento de rango.
+4.	Penalizaciones.
+5.	Clase de aventurero.
+6.	Login.
+7.	Registro.
+8.	Tienda del gremio.
+9.	Galería de imágenes.
+10.	Gestor de economía por aventurero.
+11.	Gestor de ítems.
+12.	Mejora de ítems.
+13.	Creación de teams.
+14.	Eliminación de Aventureros.
+15.	Eliminación de teams.
+16.	Actualizar clase de aventureros.
+17.	Subir imagen personalizada de aventurero.
+18.	Gestor de roles.
+19.	Carrito de compras.
+20.	Subir ítem a la tienda para su venta.
+21.	Tablero de misiones.
