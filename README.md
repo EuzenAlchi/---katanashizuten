@@ -58,6 +58,7 @@ Requerimientos no Funcionales.
     c.	Asignación de roles.
     d.	Tablero de misiones.
     e.	Asignación de misiones. (aventurero)
+    f.  Titulos en japones.
 5.	Gestor de ítems.
     a.	Tipo de ítem.
     b.	Mejora de ítems.
