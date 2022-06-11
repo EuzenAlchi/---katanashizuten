@@ -25,25 +25,46 @@ a master (main).
 
 ## Página web de gestión para un gremio de aventureros.
 
-Teniendo en cuenta que nuestro gremio va a tener:
-1.	Categoría de rangos.
-2.	Registro de aventurero.
-3.	Gestor de aumento de rango.
-4.	Penalizaciones.
-5.	Clase de aventurero.
-6.	Login.
-7.	Registro.
-8.	Tienda del gremio.
-9.	Galería de imágenes.
-10.	Gestor de economía por aventurero.
-11.	Gestor de ítems.
-12.	Mejora de ítems.
-13.	Creación de teams.
-14.	Eliminación de Aventureros.
-15.	Eliminación de teams.
-16.	Actualizar clase de aventureros.
-17.	Subir imagen personalizada de aventurero.
-18.	Gestor de roles.
-19.	Carrito de compras.
-20.	Subir ítem a la tienda para su venta.
-21.	Tablero de misiones.
+[かたな] [しず] [てん]
+ 刀鎮天
+
+Página web de gestión para un gremio de aventureros.
+
+Requerimientos no Funcionales.
+
+1.	Gestor de acceso al sistema del gremio.
+    a.	Login.
+    b.	Registro administrador.
+    i.	Registro de Aventurero
+2.	Tienda Gremio
+    a.	Carrito de compras.
+    b.	Subir ítem a la tienda para su venta.
+    c.	Imágenes de los ítems.
+    d.	Sistema de pago.
+3.	Gestor de Aventureros
+    a.	Registro de Aventurero.
+    b.	Eliminación de Aventureros.
+    c.	Actualizar clase de aventurero.
+    d.	Billetera.
+    e.	Penalizaciones.
+    f.	Clase de Aventurero.
+    g.	Subir imagen personalizada de aventurero.
+    h.	Asignación de party.
+    i.	Eliminación de party.
+    j.	Selector de misiones.
+4.	Gestor administrativo.
+    a.	Categoría de rango.
+    b.	Aumento de rango.
+    c.	Asignación de roles.
+    d.	Tablero de misiones.
+    e.	Asignación de misiones. (aventurero)
+5.	Gestor de ítems.
+    a.	Tipo de ítem.
+    b.	Mejora de ítems.
+    c.	Crafteo de ítems.
+6.	Galería de imágenes.
+    a.	Ítems
+    b.	Aventureros
+7.	Gestor de economía.
+    a.	Aventuro (Billetera).
+    b.	Tienda (Sistema de pago)
