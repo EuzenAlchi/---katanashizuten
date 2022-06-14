@@ -251,6 +251,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #be0000;
+}
+
+.login-box:hover {
+  color: #fff;
 }
 
 .login-box a {
