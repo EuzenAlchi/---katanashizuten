@@ -11,7 +11,6 @@ import { RegisterAventureroComponent } from './register-aventurero/register-aven
   declarations: [
     LoginComponent,
     RegisterAdminComponent,
-
     RegisterAventureroComponent,
   ],
   imports: [CommonModule, AuthRoutingModule],
