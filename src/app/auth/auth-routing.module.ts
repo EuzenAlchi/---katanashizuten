@@ -20,7 +20,16 @@ const routes: Routes = [
         path: 'registerAventure',
         component: RegisterAventureroComponent,
       },
+
+      {
+        path: '**',
+        redirectTo: 'login',
+      },
     ],
+  },
+  {
+    path: '**',
+    redirectTo: 'auth',
   },
 ];
 
