@@ -41,12 +41,12 @@ label {
 }
 
 a {
-  color: #be0000;
+  cursor: pointer;
+  color: #be0000 !important;
 }
 
-a:focus,
 a:hover {
-  color: #008080;
+  color: #008080 !important;
 }
 
 .checkbox-inline + .checkbox-inline,
@@ -262,8 +262,6 @@ img {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #be0000;
-  font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
@@ -364,4 +362,16 @@ img {
   100% {
     bottom: 100%;
   }
+}
+
+.btn_login {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  color: #be0000;
+  font-size: 16px;
+}
+
+.btn_login:hover {
+  color: white;
 }

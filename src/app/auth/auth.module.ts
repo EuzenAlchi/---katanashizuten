@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterAdminComponent } from './register-admin/register-admin.component';
 import { RegisterAventureroComponent } from './register-aventurero/register-aventurero.component';
 import { CloudsComponent } from './components/clouds/clouds.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,6 @@ import { CloudsComponent } from './components/clouds/clouds.component';
     RegisterAventureroComponent,
     CloudsComponent,
   ],
-  imports: [CommonModule, AuthRoutingModule],
+  imports: [CommonModule, AuthRoutingModule, ReactiveFormsModule, RouterModule],
 })
 export class AuthModule {}
