@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { interval, Observer } from 'rxjs';
+import { delay, interval, Observer } from 'rxjs';
 import { DataLogin } from 'src/app/interfaces/auth.interfaces';
 import { AuthService } from '../../services/auth.service';
 
@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   public msgError!: string;
   private _observer: Observer<DataLogin> = {
     next: (resp) => {
-      console.log(resp);
+      this.router.navigateByUrl('home/inicio/init');
     },
     error: (err) => {
       this.errorIngreso = true;
@@ -51,7 +51,10 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    this.auth.login(this.loginForm.value).subscribe(this._observer);
+    this.auth
+      .login(this.loginForm.value)
+      .pipe(delay(300))
+      .subscribe(this._observer);
   }
 
   getError(campo: string): boolean {
@@ -60,6 +63,7 @@ export class LoginComponent implements OnInit {
     //   const errores = this.loginForm.get(campo)?.errors;
     //   console.log(errores);
     // }
+    // console.log(this.loginForm.validator());
     return this.loginForm.get(campo)?.invalid &&
       this.loginForm.get(campo)?.touched
       ? true
