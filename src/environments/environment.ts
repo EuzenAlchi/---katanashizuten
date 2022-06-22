@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   urlBase: 'http://localhost:5001/katanashizuten-cd932/us-central1/api',
+  image64: '',
 };
 
 /*
