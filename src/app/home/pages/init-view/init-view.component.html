@@ -1,10 +1,15 @@
-<section class="d-flex">
-  <div id="sidebar" class="p-2 align-self-stretch">
+<section class="d-flex height">
+  <div
+    id="sidebarContainer"
+    class="align-self-stretch animate__animated ocultar"
+  >
     <app-sidebar></app-sidebar>
   </div>
-  <div id="header" class="flex-grow-1 p-0">
+  <div id="init" class="flex-grow-1 p-0">
     <app-header></app-header>
     <!-- Contenido de la pagina  -->
-    <div class="container"><h2>Hola mundo</h2></div>
+    <div class="container">
+      <canvas id="canvas1"></canvas>
+    </div>
   </div>
 </section>

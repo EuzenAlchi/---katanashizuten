@@ -1,0 +1,21 @@
+.sidebar {
+  background-color: #032535;
+  margin: 0;
+  height: 100%;
+  width: 300px;
+  border-right: 2px solid #ebfffb;
+  color: #ebfffb;
+}
+
+.avatar {
+  padding-top: 20px;
+  border-radius: 100%;
+}
+
+.avatar img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  border-radius: 100px;
+  border: 6px solid #61234e;
+}

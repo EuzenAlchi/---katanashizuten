@@ -9,6 +9,9 @@ export class InitViewComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    document.body.style.backgroundImage = 'url()';
+    document.body.style.background = 'black';
+    this.cargarImagen();
   }
+
+  cargarImagen() {}
 }
