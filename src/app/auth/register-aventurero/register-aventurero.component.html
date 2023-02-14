@@ -1,1 +1,79 @@
-<p>register-aventurero works! Francisco</p>
+<div>
+    <app-clouds></app-clouds>
+</div>
+
+<div class="container container-center-register">
+    <div id="register-button" class="animate_animated" (click)="mostrarRegister()">
+        <img src="../../../assets/img/iconoDeperfil.png" />
+    </div>
+<div
+    class="register-container-wrapper clearfix ocultar animate_animated"
+    id="register-container"
+>
+    <div class="tab-content">
+    <div class="tab-pane active" id="register">
+        <form
+        class="form-horizontal register-form"
+        [formGroup]="registerForm"
+        (ngSubmit)="register()"
+        >
+        <div class="form-group relative mb-4">
+            <input
+            class="form-control input-lg"
+            id="register_username"
+            placeholder="E-mail Address"
+            name="email"
+            formControlName="email"
+            type="email"
+            />
+            <i class="fa fa-user"></i>
+            <div *ngIf="getError('email')" class="text-center mt-2">
+            <p style="color: red">Parametro requerido</p>
+            </div>
+        </div>
+        <div class="form-group relative">
+            <input
+            class="form-control input-lg"
+            id="register_password"
+            placeholder="Password"
+            name="password"
+            formControlName="password"
+            type="password"
+            />
+            <i class="fa fa-lock"></i>
+            <div *ngIf="getError('password')" class="text-center">
+            <p style="color: red">Parametro requerido</p>
+            </div>
+        </div>
+        <div class="form-group mb-4">
+            <div class="register-box">
+            <a>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <button class="btn_register" [disabled]="this.registerForm.invalid">
+                register
+                </button>
+            </a>
+            </div>
+        </div>
+
+        <hr />
+        <div class="text-center">
+            <label><a (click)="pathLogin()">¿Ya tienes cuenta? Inicia sesión</a></label>
+        </div>
+        </form>
+
+        <!-- Alerta de Error de registro -->
+        <div
+        class="alert alert-dark mt-4 animate_animated animate_bounce"
+        role="alert"
+        *ngIf="this.errorRegistro"
+        >
+        {{ this.msgError }}
+        </div>
+    </div>
+    </div>
+</div>
+</div>

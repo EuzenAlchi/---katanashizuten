@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { catchError, Observable, tap, throwError } from 'rxjs';
 import { environment } from '../../environments/environment';
 
-import { DataLogin, Login } from '../interfaces/auth.interfaces';
+import { DataLogin, DataRegister, Login, Register } from '../interfaces/auth.interfaces';
 import { User } from '../models/user.model';
 
 @Injectable({
@@ -16,6 +16,15 @@ export class AuthService {
 
   login(data: Login): Observable<DataLogin> {
     return this.http.post<DataLogin>(`${this._urlBase}/login`, data).pipe(
+      tap(({ token }) => {
+        localStorage.setItem('token', token);
+      }),
+      catchError((err) => throwError(() => err))
+    );
+  }
+
+  register(data: Register): Observable<DataRegister> {
+    return this.http.post<DataRegister>(`${this._urlBase}/registerAventure`, data).pipe(
       tap(({ token }) => {
         localStorage.setItem('token', token);
       }),
