@@ -152,6 +152,7 @@ ul.switcher li {
 }
 
 .login input[type="email"],
+.login input[type="text"],
 .login input[type="password"],
 .login input:focus {
   background-color: rgba(40, 52, 67, 0.75);
@@ -444,12 +445,13 @@ img {
 }
 
 .register-form .input-lg {
-  font-size: 16px;
-  height: 52px;
+  font-size: 14px;
+  height: 40px;
   padding: 10px 25px;
   border-radius: 0;
 }
 
+.register input[type="text"],
 .register input[type="email"],
 .register input[type="password"],
 .register input:focus {
