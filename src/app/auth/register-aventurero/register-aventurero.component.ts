@@ -13,7 +13,7 @@ import { AuthService } from 'src/app/services/auth.service';
 export class RegisterAventureroComponent implements OnInit {
   public errorRegistro: boolean = false;
   public msgError!: string;
-  private _observer: Observer<DataRegister> = {
+  private __observer: Observer<DataRegister> = {
     next: (resp) => {
       console.log(resp);
     },
@@ -53,7 +53,7 @@ export class RegisterAventureroComponent implements OnInit {
   }
 
   register() {
-    this.auth.register(this.registerForm.value).subscribe(this._observer);
+    this.auth.register(this.registerForm.value).subscribe(this.__observer);
   }
 
   getError(campo: string): boolean {
